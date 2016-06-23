@@ -6,6 +6,7 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "lodash": "latest",
     "parse": "^1.8.5",
     "react": "15.1.0",
     "react-native": "^0.28.0",

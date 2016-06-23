@@ -1,31 +1,38 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
 
+
+
+const c = function(){console.log.apply(console, arguments);};
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  ListView
+
 } from 'react-native';
+
+
+
+var index = require('./react_native/index.js');
 
 class GoTango extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Bienvenidos a GoTango !!!
         </Text>
-        <Text style={styles.instructions}>
+        {/*<Text style={styles.instructions}>
           To get started, edit index.android.js
         </Text>
         <Text style={styles.instructions}>
           Shake or press menu button for dev menu
-        </Text>
+        </Text>*/}
+
+
       </View>
+
     );
   }
 }
@@ -49,4 +56,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('GoTango', () => GoTango);
+AppRegistry.registerComponent('GoTango', () => index);

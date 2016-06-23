@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
+
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="22" />
@@ -15,6 +16,7 @@
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:theme="@style/AppTheme">
+      <meta-data android:value="AIzaSyDUiVoQXc69TLK3sxkrrJTbHOr1rKBGuJs" android:name="com.google.android.geo.API_KEY"></meta-data>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
