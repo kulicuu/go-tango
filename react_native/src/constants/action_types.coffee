@@ -1,0 +1,10 @@
+
+keymirror = require 'keymirror'
+module.exports = keymirror
+    FETCH_DATA_REQUEST_STARTED: null
+    FETCH_DATA_REQUEST_FINISHED: null
+    FETCH_ORGANIZERS_REQUEST_SUCCEED: null
+    FETCH_LOCATIONS_REQUEST_SUCCEED: null
+    FETCH_EVENTS_REQUEST_SUCCEED: null
+    ADD_NEW_EVENT_REQUEST_SUCCEED: null
+    EVENT_CHANGED: null

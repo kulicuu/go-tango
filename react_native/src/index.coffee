@@ -8,7 +8,7 @@ rr = -> React.createFactory(React.createClass.apply(React, arguments))
 
 { AppRegistry, StyleSheet: _StyleSheet, Text: _Text, View: _View, TextInput: _TextInput } = require 'react-native'
 
-
+c 'hey'
 View = React.createFactory _View
 Text = React.createFactory _Text
 TextInput = React.createFactory _TextInput
@@ -41,7 +41,7 @@ module.exports = rr
         # View
         #     style: styles.container
             # style: null
-            ,
+
             # Text null, "Bienvenidos a GoTango"
 
             # TextInput

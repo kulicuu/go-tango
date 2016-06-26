@@ -14,7 +14,7 @@ import {
 
 
 
-var index = require('./react_native/index.js');
+var index = require('./react_native/build/index.js');
 
 class GoTango extends Component {
   render() {
