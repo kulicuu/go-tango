@@ -17,7 +17,7 @@ precursors = {
 } = require 'react-native'
 
 
- {
+{
      Text, View, TouchableOpacity
  } = dom_funcs = _.reduce precursors, (acc, v, k) ->
     acc[k] = React.createFactory v
@@ -44,14 +44,15 @@ Title = ({title})->
         title
 
 exports.HeaderComponent = rr
-    View
-        style: styles.headerContainer
-        ,
-        BackButton
-            onButtonPressed: @props.onBackButtonPressed
+    render: ->
+        View
+            style: styles.headerContainer
             ,
-            Title
-                title: @props.title
+            BackButton
+                onButtonPressed: @props.onBackButtonPressed
+                ,
+                Title
+                    title: @props.title
 
 styles = StyleSheet.create
     headerContainer:

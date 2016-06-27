@@ -1,6 +1,6 @@
 
 keymirror = require 'keymirror'
-module.exports = keymirror
+module.exports = action_types = keymirror
     FETCH_DATA_REQUEST_STARTED: null
     FETCH_DATA_REQUEST_FINISHED: null
     FETCH_ORGANIZERS_REQUEST_SUCCEED: null
@@ -8,3 +8,20 @@ module.exports = keymirror
     FETCH_EVENTS_REQUEST_SUCCEED: null
     ADD_NEW_EVENT_REQUEST_SUCCEED: null
     EVENT_CHANGED: null
+    ORGANIZER_SELECTED: null
+    LOCATION_SELECTED: null
+    BACK_TO_EVENT_LIST_VIEW: null
+
+
+mirror = {
+    FETCH_DATA_REQUEST_STARTED,
+    FETCH_DATA_REQUEST_FINISHED,
+    FETCH_ORGANIZERS_REQUEST_SUCCEED,
+    FETCH_LOCATIONS_REQUEST_SUCCEED,
+    FETCH_EVENTS_REQUEST_SUCCEED,
+    ADD_NEW_EVENT_REQUEST_SUCCEED,
+    EVENT_CHANGED,
+    ORGANIZER_SELECTED,
+    LOCATION_SELECTED,
+    BACK_TO_EVENT_LIST_VIEW
+} = action_types
