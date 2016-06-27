@@ -13,6 +13,7 @@
     "react-native": "^0.28.0",
     "react-native-i18n-complete": "^0.1.8",
     "react-native-maps": "^0.4.2",
+    "react-native-mock": "latest",
     "react-native-vector-icons": "^2.0.3",
     "react-redux": "latest",
     "react-router": "latest",
@@ -21,6 +22,7 @@
     "redux-logger": "latest",
     "redux-promise": "latest",
     "redux-thunk": "latest",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "tape": "latest"
   }
 }

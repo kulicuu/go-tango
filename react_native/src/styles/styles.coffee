@@ -5,6 +5,7 @@ c = -> console.log.apply console, arguments
 React = require 'react'
 { StyleSheet } = require 'react-native'
 
+
 exports.styles =
     container:
         backgroundColor: '#F5FCFF'
@@ -53,4 +54,3 @@ exports.styles =
             textAlign: 'center'
             alignSelf: 'center'
             padding: 10
-            

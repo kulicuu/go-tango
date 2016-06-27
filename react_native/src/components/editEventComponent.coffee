@@ -1,17 +1,17 @@
 
 
 c = -> console.log.apply console, arguments
-
+_ = require 'lodash'
 React = require 'react'
 rr = -> React.createFactory(React.createClass.apply(React, arguments))
 
 globalStyles = require('../styles/styles').styles
 
-action_types = require '../constants/action_types.coffee'
+action_types = require '../constants/action_types'
 
-{ StyleSheet, _Picker } = require 'react-native'
+{ StyleSheet, Picker: _Picker } = require 'react-native'
 
-{ HeaderComponent } = require './headerComponent'
+# { HeaderComponent } = require './headerComponent'
 
 PickerItem = React.createFactory _Picker.Item
 
@@ -36,7 +36,7 @@ precursors = {
     acc[k] = React.createFactory v
 , {}
 
-Icon = require 'react-native-vector-icons/FontAwesome'
+# Icon = require 'react-native-vector-icons/FontAwesome'
 
 
 exports.EditEventComponent = rr
@@ -132,4 +132,3 @@ styles = StyleSheet.create
         borderWidth: 1
         borderColor: 'charttreuse'
         borderRadius: 8
-        
